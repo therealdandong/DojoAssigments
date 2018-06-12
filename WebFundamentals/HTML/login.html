@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rrgistration Form</title>
+        <meta charset= "UTF-8">
+    </head>
+
+    <body>
+        <h1>My Registration Form</h1>
+        <table>
+            <tr>
+                <th text-align: left;>
+                    <label for="firstname">First Name:</label>
+                </th>
+                <th>
+                    <input type="text" id="firstname" name="firstname">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="lastname">Last Name:</label>
+                </th>
+                <th>
+                    <input type="text" id="lastname" name="lastname">
+                </th>
+            </tr>
+            <tr>
+                <th text-align: left;>
+                    <label for="email">Email:</label>
+                </th>
+                <th>
+                    <input type="text" id="email" name="email">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="password">Password:</label>
+                </th>
+                <th>
+                    <input type="password" id="password" name="password">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="repassword">PW Confirm:</label>
+                </th>
+                <th>
+                    <input type="password" id="repassword" name="repassword">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="birthday">Birthday</label>
+                </th>
+                <th>
+                    <input type ="date" id="birthday" value ="birthday">
+                </th>
+            </tr>
+        </table>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <p>
+            <label for="description">a short description about yourself</label>
+        </p>
+        <textarea name="description"></textarea>
+        <p>
+            <label for="language">your favourite language</label>
+
+            <select name="your favourite language">
+                <option value="javascript">Javascript</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+            </select>
+        </p>
+        <p>
+            <button type="button">submit</button>
+        </p>
+
+    </body>
+
+</html>
