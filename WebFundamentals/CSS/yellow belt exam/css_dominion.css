@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#background{
+    width: 1080px;
+    height: 680px;
+}
+#header{
+    width: 100%;
+    height: 10%;
+    background:linear-gradient(#f0eeeb,#d9d6cf);
+}
+#header img{
+    height: 65%;
+}
+#header #head-right{
+    vertical-align: top;
+    display: inline-block;
+}
+#header #head-right button{
+    margin-left: 600px;
+    margin-top: 15px;
+    vertical-align: top;
+    background: linear-gradient(#2869b2,#154275);
+    height:25px;
+    width: 70px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+#header #head-right input{
+    margin-left: 60px;
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px black;
+}
+#head-right img{
+    vertical-align: bottom;
+}
+#header ul {
+    margin-top: 4px;
+    margin-left: 120px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#header #head-right ul li{
+    padding-right: 25px;
+    margin-top: 6px;
+    border-right: 1px solid black;
+}
+#header #head-right ul #exception{
+    border: 0px;
+}
+#sidebar{
+    height: 300px;
+    width: 300px;
+    background:linear-gradient(#3573ba,#1f446d);
+    padding-top: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+#manageyouraccount{
+    height: 240px;
+    width: 270px;
+    background-color: #d4dbe3;
+    margin-left: 12px;
+}
+#manageyouraccount #sidehead{
+    background:linear-gradient(#113b69,#3a75b9);
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+}
+#manageyouraccount #sidehead h2{
+    font-weight: 100;
+}
+#manageyouraccount #sidehead p{
+    font-style: normal;
+}
+#manageyouraccount label{
+    margin-top: 35px;
+    margin-left: 25px;
+}
+#manageyouraccount input{
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+#manageyouraccount a{
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+#manageyouraccount button{
+    margin-left: 25px;
+    margin-top: 15px;
+    background:linear-gradient(#505050,#929292);
+    border: 1px solid black;
+    height: 25px;
+    width: 65px;
+    border-radius: 6px;
+}
+#manageyouraccount .register{
+    margin-left: 2px;
+}
+#customer{
+    width: 90%;
+    height: 10%;
+    background:linear-gradient(#123a67,#2769b3);
+    margin: 10px 0px 0px 12px; 
+    color: white;
+    font-size: 22px;
+}
+#secondback{
+    background:linear-gradient(#3573ba,#1f446d);
+    height: 325px;
+    width: 782px;
+    display: inline-block;
+    margin-left: -6px;
+}
+#thirdback{
+    width: 280px;
+    height: 302px;
+    display: inline-block;
+    vertical-align: top;
+}
+#deepblue{
+    width:273px;
+    height:138px;
+    background: repeating-linear-gradient(#0f3f72,#387ac5);
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+#lightblue{
+    width:273px;
+    height:104px;
+    background: repeating-linear-gradient(#4c7cb3,#3573ba);
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: -4px;
+    
+}
+#thirdback img{
+    width:273px;
+    height:60px;
+    margin-left: -4px;
+}
+#updatebar{
+    height: 25px;
+    width: 1040px;
+    background-color: #d4dbe3;
+    font-size: 18px;
+    padding: 20px;
+    
+}
+#updatebar a{
+    text-decoration: none;
+    margin-left: 25px;
+}
+#bottompanel{
+    height: 100px;
+    width: 1040px;
+    padding: 20px;
+    background-color:#204670;
+}
+#bottomsec{
+    display: inline-block;
+    width: 260px;
+    height:75px;
+    background-color: white;
+    padding: 15px;
+    margin-left: 40px;
+}
+#bottomsec div{
+    display: inline-block;
+    width: 140px;
+    height: 85px;
+    vertical-align: top;
+}
+#bottomsec h4{
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+#bottomsec a{
+    width: 130px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 13px;
+}
+#lastnavigation{
+    height: 20px;
+    padding: 15px;
+    background-color: rgb(247, 220, 220);
+}
+#lastnavigation ul{
+    display: inline-block;
+}
+
+#lastnavigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px 0px 15px;
+    border-right: 2px solid black;
+}
+#lastnavigation ul #specialli{
+    border:none;
+}
+#lastnavigation p{
+    display: inline-block;
+    margin-left: 85px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+#lastnavigation p span{
+    color: green;
+}

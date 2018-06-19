@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#background{
+    height: 1000px;
+    width: 700px;
+    background: #ffffff;
+}
+#head1{
+    width: 700px;
+    height: 80px;
+}
+#head1 img{
+    height: 80px;
+    width: 80px;
+}
+#head1 h1{
+    display: inline-block;
+    vertical-align: top;
+    margin:25px;
+    font-size: 36px;
+    margin-left: -4px;
+    font-weight: 100;
+}
+#head1 h1 a{
+    text-decoration: none;
+}
+#head2{
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(#25679f,#5283ad,#5283ad)
+}
+#head2 h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+}
+#sidebar{
+    width: 200px;
+    height:700px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+#sidebar p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#sidebar a{
+    text-decoration: none;
+}
+#sidebar #wv{
+    width: 100%;
+    height: 30px;
+    background:linear-gradient(#5b92bf,#23659e);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    margin-bottom: 2px;
+}
+#sidebar #mr{
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(#eaab54,#ef7300);
+    color:white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    margin-bottom: 20px;
+}
+#advertisement{
+    background-image: url("images/ad_background.png");
+    width: 90%;
+    height: 400px;
+    padding: 5%;
+}
+#advertisement h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+#advertisement img{
+    height: 200px;
+    width: 80%;
+    margin-left: 20px;
+}
+#advertisement button{
+    width: 80%;
+    margin-left: 10%;
+    background: linear-gradient(#6dcfdf,#00c2df);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    border-radius: 8px;
+}
+#advertisement button span{
+    font-size: 7px;
+    vertical-align: middle;
+}
+#mainhead{
+    width: 470px;
+    height: 60px;
+    border-bottom: 1px  solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+#mainhead #mainhead-left{
+    display: inline-block;
+}
+#mainhead #dnsimage {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+}
+#mainhead #dns{
+    text-decoration: none;
+    vertical-align: bottom;
+    margin-top: 10px;
+}
+
+#mainhead-right{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 140px;
+}
+#mainhead #phone{
+    height: 45px;
+    width: 45px;
+    margin-left: 90px;
+    margin-top: 3px;
+}
+#mainhead-right div{
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+#mainhead-right div a{
+    text-decoration: none;
+}
+#maincontent{
+    display: inline-block;
+    width: 470px;
+
+}
+#thewholething{
+    display: inline-block;
+    width: 475px;
+    height: 900px;
+}
+#maincontent h1{
+    font-size: 25px;
+    color: blue;
+}
+#maincontent ul li{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#maincontent #clients{
+    height: 70px;
+    width: 250px;
+    margin-left: 130px;
+}
+#maincontent ol li{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#maincontent a{
+    text-decoration: none;
+}
+#maincontent span{
+    font-size: 18px;
+}
+#big3{
+    width: 100%;
+    height: 130px;
+    border: 3px solid blue;
+    border-bottom: none;
+}
+#big3 #big3image{
+    height:130px;
+    width: 130px;
+}
+#big3 div{
+    display: inline-block;
+    width: 300px;
+    font-size: 10px;
+    vertical-align: top;
+}
