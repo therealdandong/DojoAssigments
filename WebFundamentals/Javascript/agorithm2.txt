@@ -1,0 +1,46 @@
+1) 2,3,unidenity
+2)6,10
+3)3,7
+4)15,15,10,10
+5)0,2,4,6,8,10,12,14
+6)0,0,0,1,0,2
+7)0,0,0,0,1,2,0,2,4 unidentify
+8)0,0,0,0,0,0,1,2,3,4,0,2,4,6,8,15
+
+part2
+1)
+function printUpTo(x){
+ if (x>=0){
+   for(var i=0;i<x;i++){
+     console.log(i)
+   }
+ }
+  if (x<0){
+    return false;
+  }
+}
+
+
+2)
+function printSum(x){
+  sum = 0;
+
+  for(var i=0;i<(x+1);i++){
+    sum = sum + i;
+  }
+  
+  return sum
+}
+
+3)
+function printSumArray(x){
+  sum = 0;
+  for(var i=0; i<x.length; i++) {
+    sum = x[i] +sum;
+  }
+  return sum;
+}
+
+
+
+
