@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready( function(){ 
+        $("#click button").click( function(){ $("#click p").toggle()})
+    })
+    </script>
+</head>
+    <style>
+    div div {
+        display: inline-block;
+    }
+
+    .selected{
+        color:yelow;
+    }
+    .highlight{
+        background-color:blue;
+    }
+    </style>
+<body>
+    <div id="click">
+        <div><button>Click</button></div>
+        <div>
+            <h1>Click()</h1>
+            <p>Bind an event handler to the “click” JavaScript event, or trigger that event on an element.(in this case hide or show)</p>
+        </div>
+    </div>
+    <div id="hide">
+        <div><button>hide</button></div>
+        <div>
+            <h1>hide()</h1>
+            <p>Hide the matched elements.</p>
+        </div>
+    </div>
+    <div id="show">
+        <div><button>show</button></div>
+        <div>
+            <h1>show()</h1>
+            <p>display the matched elements.</p>
+        </div>
+    </div>
+    <div id="slidedown">
+        <div><button>slideDown</button></div>
+        <div>
+            <h1>slidedown()</h1>
+            <p>Display the matched elements with a sliding motion.</p>
+        </div>
+    </div>
+    <div id="slideup">
+        <div><button>slideup</button></div>
+        <div>
+            <h1>slideup()</h1>
+            <p>hide the matched elements with a sliding motion.</p>
+        </div>
+    </div>
+    <div id="slidetoggle">
+        <div><button>slidetoggle</button></div>
+        <div>
+            <h1>slidetoggle()</h1>
+            <p>hide or display the matched elements with a sliding motion.</p>
+        </div>
+    </div>
+    <div id="fadein">
+        <div><button>fadein</button></div>
+        <div>
+            <h1>fadein()</h1>
+            <p>Display the matched elements by fading them to opaque.</p>
+        </div>
+    </div>
+    <div id="fadeout">
+        <div><button>fadeout</button></div>
+        <div>
+            <h1>fadeout()</h1>
+            <p>Hide the matched elements by fading them to transparent.</p>
+        </div>
+    </div>
+    <div id="before">
+        <div><button>before</button></div>
+        <div>
+            <h1>before()</h1>
+            <p>Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+        </div>
+    </div>
+    <div id="after">
+        <div><button>after</button></div>
+        <div>
+            <h1>after()</h1>
+            <p>Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+        </div>
+    </div>
+    <div id="append">
+        <div><button>append</button></div>
+        <div>
+            <h1>append()</h1>
+            <p>Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+        </div>
+    </div>
+    <div id="html">
+        <div><button>html</button></div>
+        <div>
+            <h1>html()</h1>
+            <p title="apple is in here">Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.</p>
+        </div>
+    </div>
+    <div id="attr">
+        <div><button>attr</button></div>
+        <div>
+            <h1>attr()</h1>
+            <p>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+        </div>
+    </div>
+    <div id="val">
+        <div><button>val</button></div>
+        <div>
+            <h1>val()</h1>
+            <input type="text" value="Get the current value of the first element in the set of matched elements or set the value of every matched element." >
+        </div>
+    </div>
+    <div id="text">
+        <div><button>text</button></div>
+        <div>
+            <h1>text()</h1>
+            <p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
+        </div>
+    </div>
+
+    
+</body>
+    <script>
+        
+        $("#hide button").click( function() {
+            $("#hide p").hide()
+        }) 
+        $("#show button").click( function() {
+            $("#show p").show()
+        }) 
+        $("#slidedown button").click( function() {
+            $("#slidedown p").slideDown()
+        }) 
+        $("#slidedown h1").click( function() {
+            $("#slidedown p").hide()
+        }) 
+        $("#slideup button").click( function() {
+            $("#slideup p").slideUp()
+        }) 
+        $("#slidetoggle button").click( function() {
+            $("#slidetoggle p").slideToggle()
+        })
+        $("#fadein button").click( function() {
+            $("#fadein p").fadeIn()
+        }) 
+        $("#fadeout button").click( function() {
+            $("#fadeout p").fadeOut()
+        })  
+        $("#addclass button").click( function(){
+            $("#addclass p").addClass("selected highlight")
+        })
+        $("#before button").click( function(){
+            $("#before p").before("text come before")
+        })
+        $("#after button").click( function(){
+            $("#after p").after("text come after")
+        })
+        $("#append button").click( function(){
+            $("#append p").append("text right after")
+        })
+        $("#html button").click( function(){
+            $("#html p").html("<p>this that a apple</p>")
+        })
+        $("#attr button").click( function(){
+             $("#attr p").attr("align", "right");
+        })
+        $("#val button").click( function(){
+            var text =$(this).text();
+             $("#val input").val(text);
+        })
+        $("#text button").click( function(){
+            $("#text p").text("this that a apple")
+        })
+
+    </script>
+</html>

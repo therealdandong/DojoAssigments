@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <style>
+    img{
+        width: 20%;
+        height: 150px;
+        margin: 15px;
+        display: inline-block;
+    }
+    button{
+        display: block;
+    }
+    
+    
+    </style>
+    
+    <container></container>
+    <script>
+        var output ='';
+        for(var i=0;i<8;i++){
+            output += '<img src="cat.jpg" alt="this is none">'
+        }
+        output +='<button>restore</button>'
+        $("container").append(output)
+
+        $("img").click( function() {
+            $(this).hide();
+        })
+        $("button").click( function() {
+            $("img").show();
+        })
+    </script>
+</body>
+
+</html>
