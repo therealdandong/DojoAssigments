@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    form div{
+        width: 200px;
+        height: 200px;
+        color: white;
+        background-color: red;
+    }
+    form #correct{
+        width: 200px;
+        height: 200px;
+        color: white;
+        background-color: green;
+    }
+
+
+</style>
+<body>
+    <form action="/compare" method="POST">
+        <center>
+            <h1>welcome to the great number game</h1>
+            <p>i am think a number from 1 to 100</p>
+            <p>take a guess!</p>
+            {% if session['statement'] == "too low" or session['statement'] == "too high" %}
+            <div>{{session['statement']}}</div>
+            {% else %}
+            <div id="correct">{{session['statement']}}</div>
+            {% endif %}
+            <input type="text" name="user_input">
+            <button type="submit">let's go</button>
+        </center>
+    </form>
+    <form action="/reset" method="POST">
+        <center>
+            <button type="submit">reset</button>
+        </center>
+    
+    </form>
+    
+</body>
+</html>

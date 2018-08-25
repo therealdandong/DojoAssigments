@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 10px;
+        padding: 0px;
+    }
+    div{
+        display: inline-block;
+        width: 20%;
+        height: 200px;
+        border: 1px solid black;
+        vertical-align: top;
+    }
+    #headline{
+        display: block;
+        border: none;
+        height: 50px;
+        width: 70%;
+    }
+    h3{
+        display: block;
+    }
+    #gold{
+        width: 100px;
+        height: 20px;
+        margin: 10px 0px 0px 0px;
+    }
+    #output{
+        overflow: scroll;
+    }
+</style>
+<body>
+    <div id="headline">
+        <label for="gold">your current gold</label>
+        <textarea id="gold">{{session['gold']}}</textarea>
+    </div>
+    <div>
+        <center>
+            <form action="/process" method="POST">
+                <h1>farm</h1>
+                <p>(earns 10 - 20 golds)</p>
+                <input type="hidden" name="deter" value="farm">
+                <button type="submit">Find Golds!</button>
+            </form>
+        </center>
+    </div>
+    <div>
+        <center>
+            <form action="/process" method="POST">
+                <h1>cave</h1>
+                <p>(earns 5 - 10 golds)</p>
+                <input type="hidden" name="deter" value="cave">
+                <button type="submit">Find Golds!</button>
+            </form>
+        </center>
+    </div>
+    <div>
+        <center>
+            <form action="/process" method="POST">
+                <h1>house</h1>
+                <p>(earns 2 - 5 golds)</p>
+                <input type="hidden" name="deter" value="house">
+                <button type="submit">Find Golds!</button>
+            </form>
+        </center>
+    </div>
+    <div>
+        <center>
+            <form action="/process" method="POST">
+                <h1>casino</h1>
+                <p>(earns/take 0 - 50 golds)</p>
+                <input type="hidden" name="deter" value="casino">
+                <button type="submit">Find Golds!</button>
+            </form>
+        </center>
+    </div>
+
+    <h3>activity</h3>
+    <textarea name="output" cols="150" rows="20" id="output">
+        {{ session['statement'] }}
+    </textarea>
+
+
+</body>
+</html>

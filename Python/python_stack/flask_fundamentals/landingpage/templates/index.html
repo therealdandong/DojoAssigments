@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dojo.css')}}">
+</head>
+
+<style>
+    *{
+        margin: 10px;
+        padding: 0px;
+    }
+    li{
+        list-style-type: none;
+    }
+  
+
+    
+</style>
+<body>
+
+
+    <center>
+        <h1>dojo news</h1>
+        {% with messages = get_flashed_messages() %}
+        {% if messages  %}
+        {% for message in messages  %}
+        {{ message }}
+        {% endfor  %}
+        {% endif %}
+        {% endwith  %}
+        
+        <form action="/result" method = "POST">
+           <li>name: <input type="text" name="name"></li>
+           <li>email: <input type="text" name="email"></li>
+           <li>address: 
+            <select name="location">
+                <option value="LA">LA</option>
+                <option value="sanfrancisco">San Francisco</option>
+                <option value="seattle">seattle</option>
+            </select></li>
+                
+            <li>language: 
+            <select name="language">
+                <option value="python">python</option>
+                <option value="javascript">javascript</option>
+                <option value="c#">c#</option>
+            </select></li>
+            <li>comment:</li>
+            <li><textarea name="comment" name="textarea" cols="30" rows="10"></textarea></li>
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+</html>

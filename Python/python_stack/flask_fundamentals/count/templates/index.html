@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Count</h1>
+        <h4>{{session['number']}} Time</h4>
+
+        <form action="/second" method="POST">
+            <button type="submit">
+                second
+            </button>
+        </form>
+
+        <form action="/reset" method = "POST">
+            <button type="submit">
+                reset
+            </button>
+        
+        </form>
+
+
+    </center>
+</body>
+</html>

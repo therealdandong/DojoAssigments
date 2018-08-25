@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'gold_man_app/css/main.css' %}">
+</head>
+<body>
+        <div>
+            <p>your current gold is {{ request.session.total_gold }}</p>
+        </div>
+        <div class="mid4">
+            <form action="/process" method="POST">
+                {% csrf_token %}
+                <h1>farm</h1>
+                <p>(earn 10-20 golds)</p>
+                <input type="hidden" name="id_activity" value="10">
+                <input type="submit" value="Find Gold!">
+            </form>
+        </div>
+        <div class="mid4">
+            <form action="/process" method="POST">
+                {% csrf_token %}
+                <h1>cave</h1>
+                <p>(earn 5-10 golds)</p>
+                <input type="hidden" name="id_activity" value="11">
+                <input type="submit" value="Find Gold!">
+            </form>
+        </div>
+        <div class="mid4">
+            <form action="/process" method="POST">
+                {% csrf_token %}
+                <h1>house</h1>
+                <p>(earn 2-5 golds)</p>
+                <input type="hidden" name="id_activity" value="12">
+                <input type="submit" value="Find Gold!">
+            </form>
+        </div>
+        <div class="mid4">
+            <form action="/process" method="POST">
+                {% csrf_token %}
+                <h1>casino</h1>
+                <p>(earn or taken 0-50 golds)</p>  
+                <input type="hidden" name="id_activity" value="13">
+                <input type="submit" value="Find Gold!">
+            </form>
+        </div>
+        <div>
+            activity:
+        </div>
+        <div id="activity">
+            <textarea name="output_log"  cols="60" rows="10">{{request.session.activity_log}}</textarea>
+        </div>
+
+    
+</body>
+</html>

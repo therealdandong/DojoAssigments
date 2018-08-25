@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin-left: 30%;
+}
+ul li{
+    margin: 25px;
+}
+#comment{
+    display: block;
+}
+form #biginput{
+    width: 30%;
+    height: 25%;
+    display: inline-block;
+}

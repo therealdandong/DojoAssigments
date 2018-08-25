@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration</h1>
+
+    {% if messages %}
+    {% for message in messages %}
+    <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    <form action="{% url 'user_process' %}" method="POST">
+        {% csrf_token %}
+        <li>
+            <label for="first_name"> first name</label>
+            <input type="text" name="first_name">
+        </li>
+        <li>
+            <label for="last_name"> last name</label>
+            <input type="text" name="last_name">
+        </li>
+        <li>
+            <label for="email"> email</label>
+            <input type="text" name="email">
+        </li>
+        <li>
+            <label for="password">password</label>
+            <input type="password" name="password">
+        </li>
+        <li>
+            <label for="password_confirm">confirm password</label>
+            <input type="password" name="password_confirm">
+        </li>
+        <input type="submit" value="Register">
+    </form>
+
+    <h1>Login</h1>
+    <form action="{% url 'user_validate' %}" method="POST">
+        {% csrf_token %}
+        <li>
+            <label for="email">Email:</label>
+            <input type="text" name="email">
+        </li>
+        <li>
+            <label for="password">password:</label>
+            <input type="password" name="password">
+        </li>
+        <input type="submit" value="login">
+    </form>
+
+</body>
+</html>

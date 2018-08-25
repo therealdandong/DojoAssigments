@@ -1,0 +1,7 @@
+*{
+    padding: 15px;
+}
+
+h1, div{
+    border-style: solid black;
+}

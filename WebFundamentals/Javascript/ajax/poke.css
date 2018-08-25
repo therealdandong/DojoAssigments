@@ -1,0 +1,11 @@
+div{
+    height: 550px;
+    width: 180px;
+    display: inline-block;
+    border: 10px solid red;
+    vertical-align: top;
+}
+container{
+    display: inline-block;
+    width: 900px;
+}

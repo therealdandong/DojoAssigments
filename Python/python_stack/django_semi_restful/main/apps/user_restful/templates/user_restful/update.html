@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit user {{user.id}}</h1>
+
+    {% if messages %}
+    {% for message in messages %}
+    <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    <form action="{% url 'user_edit' id=user.id %}" method="POST">
+        {% csrf_token %}
+        <li>
+            <label for="first_name">first name:</label>
+            <input type="text" name="first_name">
+        </li>
+        <li>
+            <label for="last_name">last name:</label>
+            <input type="text" name="last_name">
+        </li>
+        <li>
+            <label for="email">email:</label>
+            <input type="text" name="email">
+        </li>
+        <input type="submit" value="update">
+    </form>
+    <a href="{% url 'user_show' id=user.id %}">show</a>
+</body>
+</html>

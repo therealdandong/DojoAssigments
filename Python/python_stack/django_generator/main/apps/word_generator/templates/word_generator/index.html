@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'word_generator/css/main.css' %}">
+    <title>Document</title>
+</head>
+<body>
+   
+    <center>
+        <form action="/" >
+            {% csrf_token %}
+            <h1>random word attempt# {{request.session.counter}}</h1>
+            <textarea cols="30" rows="20">{{key_ran}}</textarea>
+            <input type="submit" value="generate">
+        </form>    
+    </center>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gotta Catch'em All</title>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <link rel="stylesheet" href="poke.css">
+    </head>
+    <body>
+        <container>
+           
+        </container>
+        <div>
+            <h1></h1>
+            <img src="" alt="">
+            <h3>types</h3>
+            <p></p>
+            <h3>Weight</h3>
+            <p></p>
+            <h3>height</h3>
+            <p></p>
+        </div>
+
+        <script>
+            var output =''
+            for(var i=1;i< 51;i++){
+                output+= ' <img id="'+i+'" src="http://pokeapi.co/media/img/'+i+'.png">'
+            }
+            $("container").html(output)
+
+            $("img").click( function(){
+                var id = $(this).attr("id");
+                console.log(id)
+                $.get("http://pokeapi.co/api/v2/pokemon/"+id+"", function(data) {
+                    var name= data.name
+                    var weight = data.weight
+                    var height =data.height
+                    var types =[];
+                    for(var j=0;j<data.types.length;j++){
+                        types.push(data.types[j].type.name)
+                    }
+                   
+                    console.log(name,weight,height,types)
+                    $("div").html("<h1>"+name+"</h1><img src='http://pokeapi.co/media/img/"+id+".png'><h3>types</h3><p>"+types+"</p><h3>Weight</h3><p>"+weight+"</p><h3>height</h3><p>"+height+"</p>")
+
+                
+                })
+                    
+                 
+            })
+        </script>
+    </body>
+</html>
